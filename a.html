@@ -1,0 +1,72 @@
+!DOCTYPE html
+html lang=tr
+head
+meta charset=UTF-8
+meta name=viewport content=width=device-width, initial-scale=1.0
+titleSürpriz Kalptitle
+style
+  body {
+    display flex;
+    justify-content center;
+    align-items center;
+    height 100vh;
+    background-color #fef0f0;
+    font-family Arial, sans-serif;
+  }
+
+  #surpriseBox {
+    padding 20px 40px;
+    background-color #ff9999;
+    color white;
+    font-size 18px;
+    border-radius 10px;
+    cursor pointer;
+    user-select none;
+    transition transform 0.2s;
+  }
+
+  #surpriseBoxhover {
+    transform scale(1.1);
+  }
+
+  #heart {
+    font-size 50px;
+    color red;
+    opacity 0;
+    transform scale(0.5);
+    margin-top 20px;
+    transition opacity 2s, transform 2s;
+  }
+
+   Kalp atma animasyonu 
+  @keyframes heartbeat {
+    0%, 100% { transform scale(1); }
+    25% { transform scale(1.2); }
+    50% { transform scale(0.9); }
+    75% { transform scale(1.1); }
+  }
+
+  #heart.show {
+    opacity 1;
+    animation heartbeat 1s infinite;
+  }
+style
+head
+body
+
+div
+  div id=surpriseBoxDokun buraya, sürprizin var!div
+  div id=heart❤️div
+div
+
+script
+  const box = document.getElementById('surpriseBox');
+  const heart = document.getElementById('heart');
+
+  box.addEventListener('click', () = {
+    heart.classList.add('show');
+  });
+script
+
+body
+html
