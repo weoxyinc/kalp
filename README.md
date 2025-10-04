@@ -1,1 +1,1 @@
-kalp 
+uğraşmak istemiyorum yapmadım daha 
